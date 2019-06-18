@@ -1,0 +1,54 @@
+{
+  "name": "lbmesh-s3-upload-resize",
+  "version": "1.0.0",
+  "description": "Updated Version of older s3_upload_resize for LBMesh Framework",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --ui bdd -R spec --slow 3000",
+    "test": "mocha -c --reporter list --slow 3000 --check-leaks",
+    "test-debug": "mocha -w --debug-brk --slow 3000",
+    "test-dev": "DEBUG=* ./node_modules/.bin/mocha -w --growl --slow 3000"
+  },
+  "dependencies": {
+    "async": "2.1.4",
+    "aws-sdk": "^2.477.0",
+    "debug": "^4.1.1",
+    "imagemagick-stream": "4.1.1",
+    "is2": "1.0.9",
+    "isstream": "0.1.2",
+    "lodash": "^4.17.11",
+    "tmp": "0.0.31"
+  },
+  "devDependencies": {
+    "image-size-stream": "1.1.0",
+    "is-jpg": "1.0.0",
+    "istanbul": "0.4.5",
+    "md5-file": "3.1.1",
+    "mocha": "^6.1.4",
+    "read-chunk": "2.0.0",
+    "request": "^2.88.0",
+    "text-encoding": "0.6.4",
+    "uuid": "3.0.1"
+  },
+  "keywords": [
+    "s3",
+    "upload",
+    "image",
+    "images",
+    "lbmesh",
+    "loopback.io",
+    "lbmesh.io",
+    "messenger",
+    "resize"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lb-mesh/lbmesh-s3-upload-resize.git"
+  },
+  "author": "Jamil Spain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lb-mesh/lbmesh-s3-upload-resize/issues"
+  },
+  "homepage": "https://github.com/lb-mesh/lbmesh-s3-upload-resize#readme"
+}
