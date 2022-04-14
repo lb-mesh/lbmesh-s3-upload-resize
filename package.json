@@ -10,7 +10,7 @@
     "test-dev": "DEBUG=* ./node_modules/.bin/mocha -w --growl --slow 3000"
   },
   "dependencies": {
-    "async": "2.1.4",
+    "async": "3.2.2",
     "yargs-parser": ">=13.1.2",
     "aws-sdk": "^2.477.0",
     "debug": "^4.1.1",
